@@ -1,8 +1,10 @@
+require('dotenv').config(); // Load environment variables
+
 const mongoose = require('mongoose');
 
 // MongoDB connection URI
-const dbURI = 'mongodb://localhost:27017/Car_Sell'; // Change to your database URI
-
+const MONGODB_URI = process.env.MONGODB_URI;
+console.log(MONGODB_URI)
 // MongoDB Schema and Model
 const userSchema = new mongoose.Schema({
   email: String,
@@ -12,7 +14,7 @@ const userSchema = new mongoose.Schema({
 const User = mongoose.model('Users', userSchema);
 
 // Connect to MongoDB
-mongoose.connect(dbURI, { useNewUrlParser: true })
+mongoose.connect(MONGODB_URI, { useNewUrlParser: true })
   .then(() => console.log('Connected to MongoDB...'))
   .catch((err) => console.error('Could not connect to MongoDB...', err));
 

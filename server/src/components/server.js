@@ -1,9 +1,13 @@
+require('dotenv').config(); // Load environment variables
+
 const express = require('express');
 const cors = require('cors'); // To handle CORS issues if frontend and backend are on different origins
 const { authenticateUser } = require('./user'); // Import the authenticateUser function
 const {addCar, findAllCars, findCarByID} = require('./car')
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 3000; // Default to 3000 if PORT is not set
+
+
 const multer = require('multer');
 
 // Multer configuration for file uploads
