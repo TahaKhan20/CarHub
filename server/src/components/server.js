@@ -5,7 +5,7 @@ const cors = require('cors'); // To handle CORS issues if frontend and backend a
 const { authenticateUser } = require('./user'); // Import the authenticateUser function
 const {addCar, findAllCars, findCarByID} = require('./car')
 const app = express();
-const PORT = process.env.PORT || 3000; // Default to 3000 if PORT is not set
+const PORT = process.env.PORT; // Default to 3000 if PORT is not set
 
 
 const multer = require('multer');

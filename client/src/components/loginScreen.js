@@ -16,7 +16,7 @@ const LoginScreen = () => {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      const response = await axios.post('https://curious-alfajores-cf5190.netlify.app/login', {
+      const response = await axios.post('https://car-hub-gilt-eight.vercel.app:5000/login', {
         email: values.email,
         password: values.password,
       });
