@@ -33,7 +33,7 @@ const carSchema = new mongoose.Schema({
     name: { type: String, required: true }
   });
   
-  const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User', userSchema);
   
 const Car = mongoose.model('Car', carSchema);
 

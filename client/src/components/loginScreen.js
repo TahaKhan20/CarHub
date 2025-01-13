@@ -16,7 +16,7 @@ const LoginScreen = () => {
   const onFinish = async (values) => {
     setLoading(true);
     try {
-      const response = await axios.post('https://car-hub-gilt-eight.vercel.app:5000/login', {
+      const response = await axios.post('https://carhub-production.up.railway.app/login', {
         email: values.email,
         password: values.password,
       });

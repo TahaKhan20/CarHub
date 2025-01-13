@@ -69,7 +69,7 @@ const AddCar = () => {
     });
 
     try {
-      const response = await axios.post('http://localhost:5000/addCar', formData, {
+      const response = await axios.post('https://carhub-production.up.railway.app/addCar', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
 

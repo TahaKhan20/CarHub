@@ -29,9 +29,9 @@ const DisplayCars = ({ mode }) => {
           setLoading(false);
           return;
         }
-        endpoint = `http://localhost:5000/displayCars?id=${userId}`;
+        endpoint = `https://carhub-production.up.railway.app/displayCars?id=${userId}`;
       } else {
-        endpoint = 'http://localhost:5000/displayAllCars';
+        endpoint = 'https://carhub-production.up.railway.app/displayAllCars';
       }
 
       setLoading(true);
