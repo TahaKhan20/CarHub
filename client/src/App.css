@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(1, 8, 63);
+  }
+  h3{
+    color: rgb(1, 8, 63);
+  }
+
+  .submit-button{
+    background: linear-gradient(-90deg, rgba(0, 6, 172, 0.935), #040032) !important;
+    transition: background 0.1s ease !important;
+  }
+  
+  .submit-button:hover {
+    background: linear-gradient(-90deg, rgba(2, 10, 255, 0.862), #010f7a) !important;
+    }
